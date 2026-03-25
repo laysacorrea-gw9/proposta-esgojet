@@ -1091,377 +1091,163 @@
     <section id="cenario" class="appear-on-scroll">
         <h2>Cenário Atual</h2>
 
-        <div class="cenario-grid">
+        <!-- STEP 1: O PROBLEMA -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 32px;">
             <div class="cenario-card">
-                <h3>Situação Atual</h3>
-                <div class="cenario-item">
-                    <span class="cenario-label">Operadora</span>
-                    <span class="cenario-value">Unimed Volta Redonda</span>
-                </div>
-                <div class="cenario-item">
-                    <span class="cenario-label">Sinistralidade</span>
-                    <span class="cenario-value warning">113,41%</span>
-                </div>
-                <div class="cenario-item">
-                    <span class="cenario-label">Reajuste Necessário</span>
-                    <span class="cenario-value warning">88,31%</span>
-                </div>
-                <div class="cenario-item">
-                    <span class="cenario-label">Proposta Reajuste</span>
-                    <span class="cenario-value warning">39,95%</span>
-                </div>
-                <div class="cenario-item">
-                    <span class="cenario-label">Aporte Necessário</span>
-                    <span class="cenario-value warning">R$ 30.000,00</span>
-                </div>
+                <h3>Unimed Volta Redonda</h3>
+                <div class="cenario-item"><span class="cenario-label">Sinistralidade</span><span class="cenario-value warning">113,41%</span></div>
+                <div class="cenario-item"><span class="cenario-label">Reajuste proposto</span><span class="cenario-value warning">39,95%</span></div>
+                <div class="cenario-item"><span class="cenario-label">Aporte exigido</span><span class="cenario-value warning">R$ 30.000,00</span></div>
+                <div class="cenario-item"><span class="cenario-label">Fatura mensal saúde</span><span class="cenario-value">R$ 35.308,68</span></div>
+                <div class="cenario-item"><span class="cenario-label">Per capita saúde</span><span class="cenario-value">R$ 255,86/vida</span></div>
             </div>
-
             <div class="cenario-card">
-                <h3>Análise Financeira</h3>
-                <div class="cenario-item">
-                    <span class="cenario-label">Despesa Total</span>
-                    <span class="cenario-value">R$ 501.299,74</span>
-                </div>
-                <div class="cenario-item">
-                    <span class="cenario-label">Receita Atual</span>
-                    <span class="cenario-value">R$ 375.326,58</span>
-                </div>
-                <div class="cenario-item">
-                    <span class="cenario-label">Déficit</span>
-                    <span class="cenario-value warning">R$ 125.973,16</span>
-                </div>
-                <div class="cenario-item">
-                    <span class="cenario-label">Idade Média</span>
-                    <span class="cenario-value">32–33 anos</span>
-                </div>
-                <div class="cenario-item">
-                    <span class="cenario-label">Composição</span>
-                    <span class="cenario-value">71% titulares / 29% deps.</span>
-                </div>
+                <h3>Dental Amil (avulso)</h3>
+                <div class="cenario-item"><span class="cenario-label">Beneficiários cobertos</span><span class="cenario-value warning">33 de 138</span></div>
+                <div class="cenario-item"><span class="cenario-label">Sem cobertura dental</span><span class="cenario-value warning">105 vidas (76%)</span></div>
+                <div class="cenario-item"><span class="cenario-label">Fatura mensal dental</span><span class="cenario-value">R$ 1.205,62</span></div>
+                <div class="cenario-item"><span class="cenario-label">Custo total (saúde+dental)</span><span class="cenario-value" style="color: #e74c3c; font-weight:700;">R$ 36.514,30/mês</span></div>
+                <div class="cenario-item"><span class="cenario-label">Per capita total</span><span class="cenario-value" style="color: #e74c3c; font-weight:700;">R$ 264,59/vida</span></div>
             </div>
+        </div>
 
-            <!-- COMPARATIVO COPARTICIPAÇÃO -->
-            <div style="grid-column: 1 / -1; background: linear-gradient(135deg, #1a1a1a, #111); border: 1px solid rgba(184,151,90,0.2); border-radius: 12px; padding: 28px; margin-top: 8px;">
-                <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 22px; color: #B8975A; margin-bottom: 16px; text-align: center;">Comparativo de Coparticipação: Unimed vs Amil</h3>
-                <p style="text-align: center; font-size: 14px; color: #888; margin-bottom: 20px;">Valores reais cobrados pela Unimed Volta Redonda (período jan/2026) vs teto Amil Bronze Mais</p>
-                <div style="overflow-x: auto;">
-                    <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;">
-                        <thead>
-                            <tr style="border-bottom: 2px solid rgba(184,151,90,0.3);">
-                                <th style="padding: 12px; text-align: left; color: #B8975A; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Procedimento</th>
-                                <th style="padding: 12px; text-align: center; color: #e74c3c; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Unimed</th>
-                                <th style="padding: 12px; text-align: center; color: #2ecc71; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Amil (teto)</th>
-                                <th style="padding: 12px; text-align: center; color: #B8975A; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Economia</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                                <td style="padding: 12px; color: #ccc;">Consulta Médica</td>
-                                <td style="padding: 12px; text-align: center; color: #e74c3c; font-weight: 700;">R$ 53,64</td>
-                                <td style="padding: 12px; text-align: center; color: #2ecc71; font-weight: 700;">R$ 30,00</td>
-                                <td style="padding: 12px; text-align: center;"><span style="background: rgba(46,204,113,0.15); color: #2ecc71; padding: 4px 10px; border-radius: 20px; font-weight: 700; font-size: 13px;">-44%</span></td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                                <td style="padding: 12px; color: #ccc;">Consulta Médica (cooperado)</td>
-                                <td style="padding: 12px; text-align: center; color: #e74c3c; font-weight: 700;">R$ 42,91</td>
-                                <td style="padding: 12px; text-align: center; color: #2ecc71; font-weight: 700;">R$ 30,00</td>
-                                <td style="padding: 12px; text-align: center;"><span style="background: rgba(46,204,113,0.15); color: #2ecc71; padding: 4px 10px; border-radius: 20px; font-weight: 700; font-size: 13px;">-30%</span></td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                                <td style="padding: 12px; color: #ccc;">Exames Simples</td>
-                                <td style="padding: 12px; text-align: center; color: #ccc; font-weight: 700;">R$ 11,26</td>
-                                <td style="padding: 12px; text-align: center; color: #ccc; font-weight: 700;">30% (limite R$ 20)</td>
-                                <td style="padding: 12px; text-align: center; color: #888;">—</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 12px; color: #ccc;">Exames Especiais</td>
-                                <td style="padding: 12px; text-align: center; color: #e74c3c; font-weight: 700;">R$ 120,00</td>
-                                <td style="padding: 12px; text-align: center; color: #2ecc71; font-weight: 700;">30% (limite R$ 100)</td>
-                                <td style="padding: 12px; text-align: center;"><span style="background: rgba(46,204,113,0.15); color: #2ecc71; padding: 4px 10px; border-radius: 20px; font-weight: 700; font-size: 13px;">-17%</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(184,151,90,0.15); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-                    <div style="font-size: 13px; color: #888;">Total coparticipação Unimed (período jan/2026): <strong style="color: #e74c3c;">R$ 2.466,11</strong></div>
-                    <div style="font-size: 13px; color: #2ecc71; font-weight: 600;">Na Amil, consultas custam até 44% menos para o beneficiário</div>
-                </div>
+        <!-- BARRA DENTAL -->
+        <div style="background: rgba(20,20,20,0.8); border: 1px solid rgba(184,151,90,0.2); border-radius: 12px; padding: 24px; margin-bottom: 32px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-size: 14px; color: #B8975A; font-weight: 600;">Cobertura Dental Hoje</span>
+                <span style="font-size: 14px; color: #e74c3c; font-weight: 700;">Apenas 24% cobertos</span>
             </div>
+            <div style="background: rgba(231,76,60,0.2); border-radius: 30px; height: 40px; overflow: hidden;">
+                <div style="background: linear-gradient(90deg, #2ecc71, #27ae60); width: 24%; height: 100%; border-radius: 30px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; color: #fff; min-width: 70px;">33</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px;">
+                <span style="color: #2ecc71;">&#9679; 33 com dental (28 tit + 5 dep)</span>
+                <span style="color: #e74c3c;">&#9679; 105 sem dental (69 tit + 36 dep)</span>
+            </div>
+        </div>
 
-            <!-- COMPARATIVO ANUAL -->
-            <div style="grid-column: 1 / -1; background: linear-gradient(135deg, #0d1a0d, #111); border: 1px solid rgba(46,204,113,0.25); border-radius: 12px; padding: 32px; margin-top: 8px;">
-                <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 22px; color: #B8975A; margin-bottom: 24px; text-align: center;">Comparativo Anual: Custo Total (Saúde + Dental)</h3>
+        <!-- STEP 2: COMPARATIVO PRINCIPAL -->
+        <div style="background: linear-gradient(135deg, #0d1a0d, #111); border: 2px solid rgba(46,204,113,0.3); border-radius: 16px; padding: 36px; margin-bottom: 32px;">
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #B8975A; margin-bottom: 28px; text-align: center;">Comparativo: Saúde + Dental</h3>
 
-                <!-- UNIMED -->
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px;">
-                    <div style="background: rgba(231,76,60,0.08); border: 1px solid rgba(231,76,60,0.25); border-radius: 12px; padding: 24px; text-align: center;">
-                        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e74c3c; margin-bottom: 4px;">Unimed + Dental Amil Avulso</div>
-                        <div style="font-size: 12px; color: #888; margin-bottom: 12px;">Custo atual sem reajuste</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 14px; color: #aaa; margin-bottom: 4px;">Saúde: R$ 255,86/vida × 138 = R$ 35.308,68/mês</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 14px; color: #aaa; margin-bottom: 4px;">Dental: R$ 1.205,62/mês (apenas 33 vidas)</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 14px; color: #e74c3c; margin-bottom: 12px; font-style: italic;">76% dos colaboradores sem dental</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 18px; color: #e74c3c; font-weight: 700; margin-bottom: 8px;">Total mensal: R$ 36.514,30</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 14px; color: #aaa;">Anual: R$ 438.171,60</div>
-                        <div style="padding-top: 12px; margin-top: 12px; border-top: 1px solid rgba(231,76,60,0.2);">
-                            <div style="font-size: 12px; color: #888;">Per capita mensal (saúde + dental)</div>
-                            <div style="font-family: Arial, sans-serif; font-size: 32px; font-weight: 700; color: #e74c3c;">R$ 264,59</div>
-                            <div style="font-size: 11px; color: #666;">/vida/mês</div>
+            <div style="display: grid; grid-template-columns: 1fr 50px 1fr; gap: 0; align-items: stretch; margin-bottom: 24px;">
+                <!-- HOJE -->
+                <div style="background: rgba(231,76,60,0.08); border: 1px solid rgba(231,76,60,0.3); border-radius: 12px; padding: 28px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e74c3c; margin-bottom: 16px;">Hoje: Unimed + Dental Avulso</div>
+                        <div style="font-size: 14px; color: #aaa; line-height: 2;">
+                            Saúde: R$ 35.308,68/mês<br>
+                            Dental: R$ 1.205,62/mês<br>
+                            <span style="color: #e74c3c; font-style: italic;">76% sem dental</span>
                         </div>
                     </div>
-
-                    <div style="background: rgba(46,204,113,0.08); border: 1px solid rgba(46,204,113,0.25); border-radius: 12px; padding: 24px; text-align: center;">
-                        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #2ecc71; margin-bottom: 4px;">Amil Bronze Mais + Dental Incluso</div>
-                        <div style="font-size: 12px; color: #888; margin-bottom: 12px;">11 meses (1 mês cortesia GW9)</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 14px; color: #aaa; margin-bottom: 4px;">R$ 284,64/vida × 138 = R$ 39.280,32/mês</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 14px; color: #aaa; margin-bottom: 4px;">Paga 11 meses: R$ 39.280,32 × 11</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 14px; color: #2ecc71; margin-bottom: 12px; font-weight: 600;">Dental incluso para 100% das vidas</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 18px; color: #2ecc71; font-weight: 700; margin-bottom: 8px;">Efetivo mensal: R$ 36.006,96</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 14px; color: #aaa;">Anual: R$ 432.083,52</div>
-                        <div style="padding-top: 12px; margin-top: 12px; border-top: 1px solid rgba(46,204,113,0.2);">
-                            <div style="font-size: 12px; color: #888;">Per capita mensal (saúde + dental)</div>
-                            <div style="font-family: Arial, sans-serif; font-size: 32px; font-weight: 700; color: #2ecc71;">R$ 260,92</div>
-                            <div style="font-size: 11px; color: #666;">/vida/mês</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RESULTADO -->
-                <div style="background: rgba(184,151,90,0.1); border: 1px solid rgba(184,151,90,0.3); border-radius: 12px; padding: 20px; text-align: center;">
-                    <div style="display: flex; justify-content: center; align-items: center; gap: 32px; flex-wrap: wrap;">
-                        <div>
-                            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888;">Economia por vida/mês</div>
-                            <div style="font-family: Arial, sans-serif; font-size: 28px; font-weight: 700; color: #B8975A;">R$ 3,67</div>
-                        </div>
-                        <div style="width: 1px; height: 40px; background: rgba(184,151,90,0.3);"></div>
-                        <div>
-                            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888;">Economia total anual</div>
-                            <div style="font-family: Arial, sans-serif; font-size: 28px; font-weight: 700; color: #B8975A;">R$ 6.088,08</div>
-                        </div>
-                        <div style="width: 1px; height: 40px; background: rgba(184,151,90,0.3);"></div>
-                        <div>
-                            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888;">Cobertura dental</div>
-                            <div style="font-family: Arial, sans-serif; font-size: 18px; font-weight: 700; color: #e74c3c; text-decoration: line-through;">33 vidas (24%)</div>
-                            <div style="font-family: Arial, sans-serif; font-size: 22px; font-weight: 700; color: #2ecc71;">138 vidas (100%)</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CENÁRIO COM REAJUSTE -->
-                <div style="margin-top: 20px; background: rgba(231,76,60,0.06); border: 1px solid rgba(231,76,60,0.2); border-radius: 12px; padding: 20px; text-align: center;">
-                    <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #e74c3c; margin-bottom: 8px;">Se permanecer na Unimed (com reajuste 39,95% + aporte)</div>
-                    <div style="display: flex; justify-content: center; align-items: center; gap: 32px; flex-wrap: wrap;">
-                        <div>
-                            <div style="font-size: 11px; color: #888;">Unimed reajustada + dental</div>
-                            <div style="font-family: Arial, sans-serif; font-size: 22px; font-weight: 700; color: #e74c3c;">R$ 282,86/vida</div>
-                        </div>
-                        <div style="font-size: 24px; color: #888;">vs</div>
-                        <div>
-                            <div style="font-size: 11px; color: #888;">Amil Bronze+ com dental</div>
-                            <div style="font-family: Arial, sans-serif; font-size: 22px; font-weight: 700; color: #2ecc71;">R$ 260,92/vida</div>
-                        </div>
-                        <div style="width: 1px; height: 40px; background: rgba(184,151,90,0.3);"></div>
-                        <div>
-                            <div style="font-size: 11px; color: #888;">Economia neste cenário</div>
-                            <div style="font-family: Arial, sans-serif; font-size: 22px; font-weight: 700; color: #B8975A;">R$ 36.332/ano</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cenario-highlight">
-                <p><strong style="color: #B8975A;">Mesmo sem considerar o reajuste, a migração para Amil Bronze Mais já gera economia de R$ 6.088/ano e amplia a cobertura dental de 24% para 100% dos beneficiários. Se o reajuste de 39,95% for aplicado, a economia salta para R$ 36.332/ano.</strong></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ANÁLISE DENTAL -->
-    <section id="dental" class="appear-on-scroll">
-        <h2>Diagnóstico do Plano Dental</h2>
-
-        <!-- ALERTA PRINCIPAL -->
-        <div style="background: linear-gradient(135deg, rgba(231,76,60,0.12), rgba(231,76,60,0.04)); border: 1px solid rgba(231,76,60,0.35); border-radius: 16px; padding: 32px; margin-bottom: 40px; text-align: center;">
-            <div style="font-size: 48px; margin-bottom: 12px;">&#9888;</div>
-            <div style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: #e74c3c; margin-bottom: 8px;">76% dos beneficiários estão sem cobertura dental</div>
-            <div style="font-size: 15px; color: #aaa; max-width: 700px; margin: 0 auto;">Hoje a ESGO JET paga plano dental Amil separado, mas apenas <strong style="color: #e74c3c;">33 dos 138 beneficiários</strong> possuem o benefício. Os outros 105 colaboradores e dependentes não têm nenhuma cobertura odontológica.</div>
-        </div>
-
-        <!-- GRID DE DADOS -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 40px;">
-            <!-- Card 1: Quem tem -->
-            <div style="background: rgba(20,20,20,0.8); border: 1px solid rgba(46,204,113,0.25); border-radius: 12px; padding: 28px; text-align: center;">
-                <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #2ecc71; margin-bottom: 16px;">Com Dental Hoje</div>
-                <div style="font-family: Arial, sans-serif; font-size: 48px; font-weight: 700; color: #2ecc71;">33</div>
-                <div style="font-size: 14px; color: #888; margin-top: 8px;">beneficiários</div>
-                <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(46,204,113,0.15);">
-                    <div style="font-size: 13px; color: #aaa;">28 titulares + 5 dependentes</div>
-                    <div style="font-size: 12px; color: #666; margin-top: 4px;">24% do total</div>
-                </div>
-            </div>
-            <!-- Card 2: Quem NÃO tem -->
-            <div style="background: rgba(20,20,20,0.8); border: 1px solid rgba(231,76,60,0.25); border-radius: 12px; padding: 28px; text-align: center;">
-                <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #e74c3c; margin-bottom: 16px;">Sem Dental Hoje</div>
-                <div style="font-family: Arial, sans-serif; font-size: 48px; font-weight: 700; color: #e74c3c;">105</div>
-                <div style="font-size: 14px; color: #888; margin-top: 8px;">beneficiários</div>
-                <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(231,76,60,0.15);">
-                    <div style="font-size: 13px; color: #aaa;">69 titulares + 36 dependentes</div>
-                    <div style="font-size: 12px; color: #666; margin-top: 4px;">76% do total</div>
-                </div>
-            </div>
-            <!-- Card 3: Custo atual -->
-            <div style="background: rgba(20,20,20,0.8); border: 1px solid rgba(184,151,90,0.25); border-radius: 12px; padding: 28px; text-align: center;">
-                <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #B8975A; margin-bottom: 16px;">Custo Dental Atual</div>
-                <div style="font-family: Arial, sans-serif; font-size: 36px; font-weight: 700; color: #B8975A;">R$ 1.205<span style="font-size: 20px;">,62</span></div>
-                <div style="font-size: 14px; color: #888; margin-top: 8px;">/mês</div>
-                <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(184,151,90,0.15);">
-                    <div style="font-size: 13px; color: #aaa;">R$ 14.467,44 /ano</div>
-                    <div style="font-size: 12px; color: #666; margin-top: 4px;">Média R$ 36,53/vida coberta</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- BARRA DE PROGRESSO VISUAL -->
-        <div style="background: rgba(20,20,20,0.8); border: 1px solid rgba(184,151,90,0.2); border-radius: 12px; padding: 28px; margin-bottom: 40px;">
-            <div style="font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #B8975A; margin-bottom: 20px; text-align: center;">Cobertura Dental dos 138 Beneficiários</div>
-            <div style="background: rgba(231,76,60,0.2); border-radius: 30px; height: 50px; overflow: hidden; position: relative;">
-                <div style="background: linear-gradient(90deg, #2ecc71, #27ae60); width: 24%; height: 100%; border-radius: 30px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; color: #fff; min-width: 80px;">
-                    24%
-                </div>
-            </div>
-            <div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 12px;">
-                <span style="color: #2ecc71;">&#9679; 33 com dental</span>
-                <span style="color: #e74c3c;">&#9679; 105 sem dental</span>
-            </div>
-        </div>
-
-        <!-- DISTRIBUIÇÃO POR PLANO -->
-        <div style="background: rgba(20,20,20,0.8); border: 1px solid rgba(184,151,90,0.2); border-radius: 12px; padding: 28px; margin-bottom: 40px;">
-            <div style="font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #B8975A; margin-bottom: 20px; text-align: center;">Distribuição por Plano Dental (33 beneficiários)</div>
-            <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;">
-                <thead>
-                    <tr style="border-bottom: 2px solid rgba(184,151,90,0.3);">
-                        <th style="padding: 12px; text-align: left; color: #B8975A; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Plano</th>
-                        <th style="padding: 12px; text-align: center; color: #B8975A; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Titulares</th>
-                        <th style="padding: 12px; text-align: center; color: #B8975A; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Deps</th>
-                        <th style="padding: 12px; text-align: right; color: #B8975A; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Valor/Pessoa</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <td style="padding: 10px 12px; color: #ccc;">Dental E200 R PJ</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">14</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">3</td>
-                        <td style="padding: 10px 12px; text-align: right; color: #aaa;">R$ 16,41</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <td style="padding: 10px 12px; color: #ccc;">Dental E700 R PJ</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">4</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">1</td>
-                        <td style="padding: 10px 12px; text-align: right; color: #aaa;">R$ 105,62</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <td style="padding: 10px 12px; color: #ccc;">Dental E300 R PJ</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">3</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">0</td>
-                        <td style="padding: 10px 12px; text-align: right; color: #aaa;">R$ 71,86</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <td style="padding: 10px 12px; color: #ccc;">Dental E500 R PJ</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">2</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">0</td>
-                        <td style="padding: 10px 12px; text-align: right; color: #aaa;">R$ 68,28</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <td style="padding: 10px 12px; color: #ccc;">Dental E600 R PJ</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">1</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">0</td>
-                        <td style="padding: 10px 12px; text-align: right; color: #aaa;">R$ 94,92</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <td style="padding: 10px 12px; color: #ccc;">Dental E400 R PJ</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">1</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">0</td>
-                        <td style="padding: 10px 12px; text-align: right; color: #aaa;">R$ 57,61</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <td style="padding: 10px 12px; color: #ccc;">Dental 100 NAC / Dental 200</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">3</td>
-                        <td style="padding: 10px 12px; text-align: center; color: #aaa;">1</td>
-                        <td style="padding: 10px 12px; text-align: right; color: #aaa;">R$ 12,04 ~ R$ 14,31</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr style="border-top: 2px solid rgba(184,151,90,0.3);">
-                        <td style="padding: 12px; color: #B8975A; font-weight: 700;">Total</td>
-                        <td style="padding: 12px; text-align: center; color: #B8975A; font-weight: 700;">28</td>
-                        <td style="padding: 12px; text-align: center; color: #B8975A; font-weight: 700;">5</td>
-                        <td style="padding: 12px; text-align: right; color: #B8975A; font-weight: 700;">R$ 1.205,62/mês</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-
-        <!-- COMPARATIVO FINAL COM DENTAL -->
-        <div style="background: linear-gradient(135deg, #0d1a0d, #111); border: 2px solid rgba(46,204,113,0.35); border-radius: 16px; padding: 36px; margin-bottom: 20px;">
-            <div style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #B8975A; margin-bottom: 28px; text-align: center;">Comparativo Real: Saúde + Dental</div>
-
-            <div style="display: grid; grid-template-columns: 1fr 60px 1fr; gap: 0; align-items: center; margin-bottom: 28px;">
-                <!-- ATUAL -->
-                <div style="background: rgba(231,76,60,0.08); border: 1px solid rgba(231,76,60,0.25); border-radius: 12px; padding: 28px; text-align: center;">
-                    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e74c3c; margin-bottom: 12px;">Hoje: Unimed + Dental Avulso</div>
-                    <div style="font-size: 13px; color: #aaa; margin-bottom: 4px;">Unimed Saúde: R$ 35.308,68/mês</div>
-                    <div style="font-size: 13px; color: #aaa; margin-bottom: 4px;">Dental Amil (33 vidas): R$ 1.205,62/mês</div>
-                    <div style="font-size: 13px; color: #e74c3c; margin-bottom: 16px; font-style: italic;">105 colaboradores sem dental</div>
-                    <div style="font-family: Arial, sans-serif; font-size: 16px; color: #e74c3c; font-weight: 700;">Total: R$ 36.514,30/mês</div>
-                    <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(231,76,60,0.2);">
-                        <div style="font-family: Arial, sans-serif; font-size: 28px; font-weight: 700; color: #e74c3c;">R$ 264,59</div>
-                        <div style="font-size: 11px; color: #888;">/vida/mês (sem reajuste)</div>
+                    <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(231,76,60,0.2);">
+                        <div style="font-size: 11px; color: #888; margin-bottom: 4px;">Total mensal</div>
+                        <div style="font-family: Arial, sans-serif; font-size: 28px; font-weight: 700; color: #e74c3c;">R$ 36.514</div>
+                        <div style="font-family: Arial, sans-serif; font-size: 16px; color: #888; margin-top: 8px;">R$ 264,59/vida</div>
                     </div>
                 </div>
 
                 <!-- SETA -->
-                <div style="text-align: center; font-size: 32px; color: #B8975A;">&#10132;</div>
+                <div style="display: flex; align-items: center; justify-content: center; font-size: 28px; color: #B8975A;">&#10132;</div>
 
                 <!-- PROPOSTA -->
-                <div style="background: rgba(46,204,113,0.08); border: 1px solid rgba(46,204,113,0.25); border-radius: 12px; padding: 28px; text-align: center;">
-                    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #2ecc71; margin-bottom: 12px;">Proposta: Amil Bronze+ com Dental</div>
-                    <div style="font-size: 13px; color: #aaa; margin-bottom: 4px;">Saúde + Dental incluso: R$ 284,64/vida</div>
-                    <div style="font-size: 13px; color: #aaa; margin-bottom: 4px;">Paga 11 meses (1 mês cortesia GW9)</div>
-                    <div style="font-size: 13px; color: #2ecc71; margin-bottom: 16px; font-weight: 600;">Todos os 138 com dental incluso</div>
-                    <div style="font-family: Arial, sans-serif; font-size: 16px; color: #2ecc71; font-weight: 700;">Efetivo: R$ 36.006,96/mês</div>
-                    <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(46,204,113,0.2);">
-                        <div style="font-family: Arial, sans-serif; font-size: 28px; font-weight: 700; color: #2ecc71;">R$ 260,92</div>
-                        <div style="font-size: 11px; color: #888;">/vida/mês (saúde + dental)</div>
+                <div style="background: rgba(46,204,113,0.08); border: 1px solid rgba(46,204,113,0.3); border-radius: 12px; padding: 28px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #2ecc71; margin-bottom: 16px;">Proposta: Amil Bronze+ (dental incluso)</div>
+                        <div style="font-size: 14px; color: #aaa; line-height: 2;">
+                            R$ 284,64/vida &times; 138 vidas<br>
+                            Paga 11 meses (1 mês cortesia GW9)<br>
+                            <span style="color: #2ecc71; font-weight: 600;">100% com dental incluso</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(46,204,113,0.2);">
+                        <div style="font-size: 11px; color: #888; margin-bottom: 4px;">Efetivo mensal</div>
+                        <div style="font-family: Arial, sans-serif; font-size: 28px; font-weight: 700; color: #2ecc71;">R$ 36.007</div>
+                        <div style="font-family: Arial, sans-serif; font-size: 16px; color: #888; margin-top: 8px;">R$ 260,92/vida</div>
                     </div>
                 </div>
             </div>
 
-            <!-- RESULTADO FINAL -->
-            <div style="background: rgba(184,151,90,0.12); border: 1px solid rgba(184,151,90,0.4); border-radius: 12px; padding: 24px; text-align: center;">
-                <div style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap;">
+            <!-- RESULTADO -->
+            <div style="background: rgba(184,151,90,0.12); border: 1px solid rgba(184,151,90,0.4); border-radius: 12px; padding: 24px;">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; text-align: center;">
                     <div>
-                        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 4px;">Economia por vida</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 32px; font-weight: 700; color: #B8975A;">R$ 3,67<span style="font-size: 14px; color: #888;">/mês</span></div>
+                        <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #888;">Economia por vida</div>
+                        <div style="font-family: Arial, sans-serif; font-size: 30px; font-weight: 700; color: #2ecc71;">- R$ 3,67<span style="font-size: 13px; color: #888;">/mês</span></div>
                     </div>
                     <div style="width: 1px; height: 50px; background: rgba(184,151,90,0.3);"></div>
                     <div>
-                        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 4px;">Economia anual</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 32px; font-weight: 700; color: #B8975A;">R$ 6.088<span style="font-size: 14px; color: #888;">/ano</span></div>
+                        <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #888;">Economia anual</div>
+                        <div style="font-family: Arial, sans-serif; font-size: 30px; font-weight: 700; color: #2ecc71;">- R$ 6.088</div>
                     </div>
                     <div style="width: 1px; height: 50px; background: rgba(184,151,90,0.3);"></div>
                     <div>
-                        <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 4px;">Vidas com dental</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 20px; font-weight: 700; color: #e74c3c; text-decoration: line-through;">33</div>
-                        <div style="font-family: Arial, sans-serif; font-size: 32px; font-weight: 700; color: #2ecc71;">138</div>
+                        <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #888;">Cobertura dental</div>
+                        <div style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #e74c3c; text-decoration: line-through;">33 vidas</div>
+                        <div style="font-family: Arial, sans-serif; font-size: 26px; font-weight: 700; color: #2ecc71;">138 vidas</div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- CONCLUSÃO -->
-        <div style="background: rgba(184,151,90,0.05); border: 1px solid rgba(184,151,90,0.2); border-radius: 12px; padding: 24px; text-align: center;">
-            <p style="font-size: 16px; color: #ccc; line-height: 1.8; max-width: 800px; margin: 0 auto;">
-                <strong style="color: #B8975A; font-size: 18px;">Resumo:</strong> Com a migração para Amil Bronze Mais, a empresa <strong style="color: #2ecc71;">economiza R$ 6.088/ano</strong>, elimina o aporte de R$ 30.000, reduz coparticipação em até 44%, e ainda <strong style="color: #2ecc71;">amplia a cobertura dental de 33 para 138 beneficiários</strong> — sem custo adicional.
-            </p>
+        <!-- STEP 3: CENÁRIO COM REAJUSTE -->
+        <div style="background: rgba(231,76,60,0.05); border: 1px solid rgba(231,76,60,0.2); border-radius: 12px; padding: 24px; margin-bottom: 32px; text-align: center;">
+            <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #e74c3c; margin-bottom: 12px;">Se permanecer na Unimed (reajuste 39,95% + aporte R$ 30.000)</div>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 28px; flex-wrap: wrap;">
+                <div>
+                    <div style="font-size: 11px; color: #888;">Unimed reajustada + dental</div>
+                    <div style="font-family: Arial, sans-serif; font-size: 26px; font-weight: 700; color: #e74c3c;">R$ 282,86<span style="font-size: 13px; color: #888;">/vida</span></div>
+                </div>
+                <div style="font-size: 24px; color: #666;">vs</div>
+                <div>
+                    <div style="font-size: 11px; color: #888;">Amil Bronze+ (dental incluso)</div>
+                    <div style="font-family: Arial, sans-serif; font-size: 26px; font-weight: 700; color: #2ecc71;">R$ 260,92<span style="font-size: 13px; color: #888;">/vida</span></div>
+                </div>
+                <div style="width: 1px; height: 40px; background: rgba(184,151,90,0.3);"></div>
+                <div>
+                    <div style="font-size: 11px; color: #888;">Economia neste cenário</div>
+                    <div style="font-family: Arial, sans-serif; font-size: 26px; font-weight: 700; color: #B8975A;">R$ 36.332<span style="font-size: 13px; color: #888;">/ano</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COPARTICIPAÇÃO -->
+        <div style="background: rgba(20,20,20,0.8); border: 1px solid rgba(184,151,90,0.2); border-radius: 12px; padding: 28px; margin-bottom: 32px;">
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #B8975A; margin-bottom: 16px; text-align: center;">Coparticipação: Unimed vs Amil</h3>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid rgba(184,151,90,0.3);">
+                            <th style="padding: 10px; text-align: left; color: #B8975A; font-size: 12px; text-transform: uppercase;">Procedimento</th>
+                            <th style="padding: 10px; text-align: center; color: #e74c3c; font-size: 12px; text-transform: uppercase;">Unimed</th>
+                            <th style="padding: 10px; text-align: center; color: #2ecc71; font-size: 12px; text-transform: uppercase;">Amil</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 10px; color: #ccc;">Consulta Médica</td>
+                            <td style="padding: 10px; text-align: center; color: #e74c3c; font-weight: 700;">R$ 53,64</td>
+                            <td style="padding: 10px; text-align: center; color: #2ecc71; font-weight: 700;">R$ 30,00 <span style="font-size:11px;color:#2ecc71;">(-44%)</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 10px; color: #ccc;">Consulta (cooperado)</td>
+                            <td style="padding: 10px; text-align: center; color: #e74c3c; font-weight: 700;">R$ 42,91</td>
+                            <td style="padding: 10px; text-align: center; color: #2ecc71; font-weight: 700;">R$ 30,00 <span style="font-size:11px;color:#2ecc71;">(-30%)</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 10px; color: #ccc;">Exames Especiais</td>
+                            <td style="padding: 10px; text-align: center; color: #e74c3c; font-weight: 700;">R$ 120,00</td>
+                            <td style="padding: 10px; text-align: center; color: #2ecc71; font-weight: 700;">30% (teto R$ 100) <span style="font-size:11px;color:#2ecc71;">(-17%)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- CONCLUSÃO FINAL -->
+        <div class="cenario-highlight">
+            <p><strong style="color: #B8975A; font-size: 17px;">Resumo da proposta:</strong> A migração para Amil Bronze Mais gera <strong style="color: #2ecc71;">economia imediata de R$ 6.088/ano</strong>, elimina o aporte de R$ 30.000, reduz a coparticipação em até 44%, e <strong style="color: #2ecc71;">amplia a cobertura dental de 33 para 138 beneficiários</strong>. Se o reajuste da Unimed for aplicado, a economia sobe para <strong style="color: #2ecc71;">R$ 36.332/ano</strong>.</p>
         </div>
     </section>
 
