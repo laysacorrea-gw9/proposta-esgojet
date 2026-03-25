@@ -1076,8 +1076,7 @@
             </div>
 
             <div class="hero-nav">
-                <a href="#cenario" class="hn-btn">Cenário Atual</a>
-                <a href="#dental" class="hn-btn">Dental</a>
+                <a href="#cenario" class="hn-btn">Comparativo</a>
                 <a href="#ops" class="hn-btn">Operadora</a>
                 <a href="#tabelas" class="hn-btn">Valores</a>
                 <a href="#copart" class="hn-btn">Coparticipação</a>
@@ -1089,46 +1088,10 @@
 
     <!-- CENÁRIO ATUAL -->
     <section id="cenario" class="appear-on-scroll">
-        <h2>Cenário Atual</h2>
+        <h2>Comparativo Anual: Custo Total (Saúde + Dental)</h2>
 
-        <!-- STEP 1: O PROBLEMA -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 32px;">
-            <div class="cenario-card">
-                <h3>Unimed Volta Redonda</h3>
-                <div class="cenario-item"><span class="cenario-label">Sinistralidade</span><span class="cenario-value warning">113,41%</span></div>
-                <div class="cenario-item"><span class="cenario-label">Reajuste proposto</span><span class="cenario-value warning">39,95%</span></div>
-                <div class="cenario-item"><span class="cenario-label">Aporte exigido</span><span class="cenario-value warning">R$ 30.000,00</span></div>
-                <div class="cenario-item"><span class="cenario-label">Fatura mensal saúde</span><span class="cenario-value">R$ 35.308,68</span></div>
-                <div class="cenario-item"><span class="cenario-label">Per capita saúde</span><span class="cenario-value">R$ 255,86/vida</span></div>
-            </div>
-            <div class="cenario-card">
-                <h3>Dental Amil (avulso)</h3>
-                <div class="cenario-item"><span class="cenario-label">Beneficiários cobertos</span><span class="cenario-value warning">33 de 138</span></div>
-                <div class="cenario-item"><span class="cenario-label">Sem cobertura dental</span><span class="cenario-value warning">105 vidas (76%)</span></div>
-                <div class="cenario-item"><span class="cenario-label">Fatura mensal dental</span><span class="cenario-value">R$ 1.205,62</span></div>
-                <div class="cenario-item"><span class="cenario-label">Custo total (saúde+dental)</span><span class="cenario-value" style="color: #e74c3c; font-weight:700;">R$ 36.514,30/mês</span></div>
-                <div class="cenario-item"><span class="cenario-label">Per capita total</span><span class="cenario-value" style="color: #e74c3c; font-weight:700;">R$ 264,59/vida</span></div>
-            </div>
-        </div>
-
-        <!-- BARRA DENTAL -->
-        <div style="background: rgba(20,20,20,0.8); border: 1px solid rgba(184,151,90,0.2); border-radius: 12px; padding: 24px; margin-bottom: 32px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                <span style="font-size: 14px; color: #B8975A; font-weight: 600;">Cobertura Dental Hoje</span>
-                <span style="font-size: 14px; color: #e74c3c; font-weight: 700;">Apenas 24% cobertos</span>
-            </div>
-            <div style="background: rgba(231,76,60,0.2); border-radius: 30px; height: 40px; overflow: hidden;">
-                <div style="background: linear-gradient(90deg, #2ecc71, #27ae60); width: 24%; height: 100%; border-radius: 30px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; color: #fff; min-width: 70px;">33</div>
-            </div>
-            <div style="display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px;">
-                <span style="color: #2ecc71;">&#9679; 33 com dental (28 tit + 5 dep)</span>
-                <span style="color: #e74c3c;">&#9679; 105 sem dental (69 tit + 36 dep)</span>
-            </div>
-        </div>
-
-        <!-- STEP 2: COMPARATIVO PRINCIPAL -->
-        <div style="background: linear-gradient(135deg, #0d1a0d, #111); border: 2px solid rgba(46,204,113,0.3); border-radius: 16px; padding: 36px; margin-bottom: 32px;">
-            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #B8975A; margin-bottom: 28px; text-align: center;">Comparativo: Saúde + Dental</h3>
+        <!-- COMPARATIVO PRINCIPAL - PRIMEIRO -->
+        <div style="background: linear-gradient(135deg, #0d1a0d, #111); border: 2px solid rgba(46,204,113,0.3); border-radius: 16px; padding: 36px; margin-bottom: 40px;">
 
             <div style="display: grid; grid-template-columns: 1fr 50px 1fr; gap: 0; align-items: stretch; margin-bottom: 24px;">
                 <!-- HOJE -->
@@ -1191,7 +1154,42 @@
             </div>
         </div>
 
-        <!-- STEP 3: CENÁRIO COM REAJUSTE -->
+        <!-- DETALHES: SITUAÇÃO ATUAL -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 32px;">
+            <div class="cenario-card">
+                <h3>Unimed Volta Redonda</h3>
+                <div class="cenario-item"><span class="cenario-label">Sinistralidade</span><span class="cenario-value warning">113,41%</span></div>
+                <div class="cenario-item"><span class="cenario-label">Reajuste proposto</span><span class="cenario-value warning">39,95%</span></div>
+                <div class="cenario-item"><span class="cenario-label">Aporte exigido</span><span class="cenario-value warning">R$ 30.000,00</span></div>
+                <div class="cenario-item"><span class="cenario-label">Fatura mensal saúde</span><span class="cenario-value">R$ 35.308,68</span></div>
+                <div class="cenario-item"><span class="cenario-label">Per capita saúde</span><span class="cenario-value">R$ 255,86/vida</span></div>
+            </div>
+            <div class="cenario-card">
+                <h3>Dental Amil (avulso)</h3>
+                <div class="cenario-item"><span class="cenario-label">Beneficiários cobertos</span><span class="cenario-value warning">33 de 138</span></div>
+                <div class="cenario-item"><span class="cenario-label">Sem cobertura dental</span><span class="cenario-value warning">105 vidas (76%)</span></div>
+                <div class="cenario-item"><span class="cenario-label">Fatura mensal dental</span><span class="cenario-value">R$ 1.205,62</span></div>
+                <div class="cenario-item"><span class="cenario-label">Custo total (saúde+dental)</span><span class="cenario-value" style="color: #e74c3c; font-weight:700;">R$ 36.514,30/mês</span></div>
+                <div class="cenario-item"><span class="cenario-label">Per capita total</span><span class="cenario-value" style="color: #e74c3c; font-weight:700;">R$ 264,59/vida</span></div>
+            </div>
+        </div>
+
+        <!-- BARRA DENTAL -->
+        <div style="background: rgba(20,20,20,0.8); border: 1px solid rgba(184,151,90,0.2); border-radius: 12px; padding: 24px; margin-bottom: 32px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-size: 14px; color: #B8975A; font-weight: 600;">Cobertura Dental Hoje</span>
+                <span style="font-size: 14px; color: #e74c3c; font-weight: 700;">Apenas 24% cobertos</span>
+            </div>
+            <div style="background: rgba(231,76,60,0.2); border-radius: 30px; height: 40px; overflow: hidden;">
+                <div style="background: linear-gradient(90deg, #2ecc71, #27ae60); width: 24%; height: 100%; border-radius: 30px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; color: #fff; min-width: 70px;">33</div>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px;">
+                <span style="color: #2ecc71;">&#9679; 33 com dental (28 tit + 5 dep)</span>
+                <span style="color: #e74c3c;">&#9679; 105 sem dental (69 tit + 36 dep)</span>
+            </div>
+        </div>
+
+        <!-- CENÁRIO COM REAJUSTE -->
         <div style="background: rgba(231,76,60,0.05); border: 1px solid rgba(231,76,60,0.2); border-radius: 12px; padding: 24px; margin-bottom: 32px; text-align: center;">
             <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #e74c3c; margin-bottom: 12px;">Se permanecer na Unimed (reajuste 39,95% + aporte R$ 30.000)</div>
             <div style="display: flex; justify-content: center; align-items: center; gap: 28px; flex-wrap: wrap;">
